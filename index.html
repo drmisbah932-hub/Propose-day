@@ -1,1 +1,120 @@
-
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Propose Day, Sadiq 💌</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+    .card {
+      background: #fff;
+      max-width: 420px;
+      width: 90%;
+      padding: 28px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      width: 120px;
+      height: 120px;
+      background: rgba(255, 105, 135, 0.25);
+      border-radius: 50%;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      right: -60px;
+      width: 160px;
+      height: 160px;
+      background: rgba(255, 180, 200, 0.25);
+      border-radius: 50%;
+    }
+    h1 {
+      color: #ff4f7b;
+      margin-bottom: 10px;
+    }
+    .name {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .heart {
+      font-size: 2.5rem;
+      animation: pulse 1.2s infinite;
+      margin: 10px 0 18px;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+    button {
+      background: linear-gradient(135deg, #ff4f7b, #ff8fab);
+      border: none;
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(255,79,123,0.35);
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .hidden-message {
+      display: none;
+      margin-top: 18px;
+      font-weight: 500;
+      color: #444;
+    }
+    footer {
+      margin-top: 22px;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Happy Propose Day 💖</h1>
+    <div class="name">Dear Sadiq</div>
+    <div class="heart">❤️</div>
+    <p>
+      From smiles that feel effortless to moments that feel special,
+      you’ve become someone I truly care about.
+      Today felt like the perfect day to say this…
+    </p>
+    <button onclick="revealMessage()">Tap to see my question 💌</button>
+    <div id="msg" class="hidden-message">
+      Will you be mine and make every day a little more beautiful together? 🌸
+    </div>
+    <footer>
+      Made with lots of feelings ✨
+    </footer>
+  </div>  <script>
+    function revealMessage() {
+      document.getElementById('msg').style.display = 'block';
+    }
+  </script></body>
+</html>
