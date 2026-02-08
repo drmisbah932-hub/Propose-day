@@ -125,4 +125,17 @@ button:hover {
 </audio>
 
 <script>
-function enterSite
+function enterSite() {
+  document.getElementById("intro").classList.add("hidden");
+  document.getElementById("proposal").classList.remove("hidden");
+}
+
+function sayYes() {
+  document.getElementById("music").play();
+  document.getElementById("finalMessage").classList.remove("hidden");
+  alert("You just said YES 💖 This is my favorite moment 🥹");
+}
+</script>
+
+</body>
+</html>
