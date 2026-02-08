@@ -1,120 +1,73 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Propose Day, Sadiq 💌</title>
+  <meta charset="UTF-8">
+  <title>Happy Propose Day ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 40px;
+      color: #fff;
     }
     .card {
-      background: #fff;
-      max-width: 420px;
-      width: 90%;
-      padding: 28px;
+      background: rgba(255,255,255,0.15);
       border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .card::before {
-      content: "";
-      position: absolute;
-      top: -50px;
-      left: -50px;
-      width: 120px;
-      height: 120px;
-      background: rgba(255, 105, 135, 0.25);
-      border-radius: 50%;
-    }
-    .card::after {
-      content: "";
-      position: absolute;
-      bottom: -60px;
-      right: -60px;
-      width: 160px;
-      height: 160px;
-      background: rgba(255, 180, 200, 0.25);
-      border-radius: 50%;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
     h1 {
-      color: #ff4f7b;
+      font-size: 2.5em;
       margin-bottom: 10px;
     }
-    .name {
-      font-size: 1.4rem;
-      font-weight: 600;
-      margin-bottom: 18px;
-    }
     p {
-      font-size: 1rem;
+      font-size: 1.2em;
       line-height: 1.6;
-      margin-bottom: 20px;
     }
     .heart {
-      font-size: 2.5rem;
-      animation: pulse 1.2s infinite;
-      margin: 10px 0 18px;
+      font-size: 60px;
+      animation: beat 1s infinite;
     }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.15); }
-      100% { transform: scale(1); }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
     }
     button {
-      background: linear-gradient(135deg, #ff4f7b, #ff8fab);
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 18px;
       border: none;
-      color: #fff;
-      padding: 12px 22px;
       border-radius: 30px;
-      font-size: 1rem;
+      background: #ff4b5c;
+      color: white;
       cursor: pointer;
-      box-shadow: 0 8px 18px rgba(255,79,123,0.35);
     }
     button:hover {
-      opacity: 0.9;
-    }
-    .hidden-message {
-      display: none;
-      margin-top: 18px;
-      font-weight: 500;
-      color: #444;
-    }
-    footer {
-      margin-top: 22px;
-      font-size: 0.85rem;
-      color: #777;
+      background: #ff1e38;
     }
   </style>
 </head>
 <body>
+
   <div class="card">
-    <h1>Happy Propose Day 💖</h1>
-    <div class="name">Dear Sadiq</div>
     <div class="heart">❤️</div>
+    <h1>Happy Propose Day, Sadiq 💖</h1>
     <p>
-      From smiles that feel effortless to moments that feel special,
-      you’ve become someone I truly care about.
-      Today felt like the perfect day to say this…
+      From the moment you came into my life,  
+      everything felt warmer, brighter, and happier.
     </p>
-    <button onclick="revealMessage()">Tap to see my question 💌</button>
-    <div id="msg" class="hidden-message">
-      Will you be mine and make every day a little more beautiful together? 🌸
-    </div>
-    <footer>
-      Made with lots of feelings ✨
-    </footer>
-  </div>  <script>
-    function revealMessage() {
-      document.getElementById('msg').style.display = 'block';
-    }
-  </script></body>
+    <p>
+      So today, I just want to ask you one thing…
+    </p>
+    <h2>Will you be mine? 💍</h2>
+    <button onclick="alert('You just made me the happiest person 🥹❤️')">
+      YES 💕
+    </button>
+  </div>
+
+</body>
 </html>
